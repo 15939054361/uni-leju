@@ -1,0 +1,91 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/home/index",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"h5": {
+					"titleNView": false
+				}
+			}
+		}, {
+			"path": "pages/sort/index",
+			"style": {
+				"navigationBarTitleText": "分类",
+				// "enablePullDownRefresh":true,
+				"h5": {
+					"titleNView": false,
+					"pullToRefresh": {
+						"support": true,
+						"offset": "40px"
+					}
+				}
+			}
+		}, {
+			"path": "pages/explore/index",
+			"style": {
+				"navigationBarTitleText": "发现",
+				"h5": {
+					"titleNView": false
+				}
+			}
+		}, {
+			"path": "pages/mine/index",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"h5": {
+					"titleNView": false
+				}
+			}
+		}, {
+			"path": "pages/sort/product/index",
+			"style": {
+				"h5": {
+					"titleNView": false
+				}
+			}
+		}
+	    ,{
+            "path" : "pages/sort/detail/index",
+            "style" : {
+				"navigationBarTitleText":"商品详情",
+				"h5": {
+					"titleNView": false
+				}
+			}
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#3cc51f",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+			"pagePath": "pages/home/index",
+			"iconPath": "static/icons/home.png",
+			"selectedIconPath": "static/icons/home_act.png",
+			"text": "首页"
+		}, {
+			"pagePath": "pages/sort/index",
+			"iconPath": "static/icons/sort.png",
+			"selectedIconPath": "static/icons/sort_act.png",
+			"text": "分类"
+		}, {
+			"pagePath": "pages/explore/index",
+			"iconPath": "static/icons/explore.png",
+			"selectedIconPath": "static/icons/explore_act.png",
+			"text": "发现"
+		}, {
+			"pagePath": "pages/mine/index",
+			"iconPath": "static/icons/mine.png",
+			"selectedIconPath": "static/icons/mine_act.png",
+			"text": "我的"
+		}]
+	}
+}

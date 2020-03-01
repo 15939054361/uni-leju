@@ -1,0 +1,45 @@
+.header {
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	height: 88rpx;
+
+	.header_text_box {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+
+		.act {
+			border-bottom: 6rpx solid #FFFFFF;
+			border-radius: 3rpx;
+		}
+
+		view {
+			margin: 0 16rpx;
+			line-height: 64rpx;
+			font-family: PingFangSC-Regular;
+			font-size: 32rpx;
+			color: #FFFFFF;
+			letter-spacing: 2.29rpx;
+		}
+	}
+
+	.right {
+		overflow: hidden;
+	}
+
+	.right image {
+
+		float: left;
+		margin-left: 16rpx;
+	}
+
+	.left image {
+		margin-top: 26rpx;
+	}
+
+	image {
+		width: 36rpx;
+		height: 36rpx;
+	}
+}
